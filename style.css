@@ -224,43 +224,19 @@ html {
 
 .companySkills {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
   gap: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 50%;
 }
 
 .companySkillName {
   font-size: 18px;
   text-align: center;
-  background-color: #ffa07a; /* Softer background */
+  background-color: #ff6522;
   padding: 8px;
+  width: 80px;
   border-radius: 10px;
-  color: #000; /* Black text for contrast */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds slight depth */
-  width: 100%; /* Take full width on smaller devices */
-  max-width: 300px; /* Optional: Limit width for better readability */
-  margin: 0 auto; /* Center-align skills */
 }
-
-/* Media Query for Phones */
-@media (max-width: 768px) {
-  .companySkills {
-    padding-bottom: 20px; /* Adjust padding for phones */
-  }
-
-  .companySkillName {
-    font-size: 16px; /* Slightly smaller text for phones */
-    padding: 6px; /* Adjust padding for a more compact look */
-    width: 90%; /* Take most of the screen width */
-  }
-}
-
-
-
-
-
-
 
 .companyPeriod {
   font-size: 24px;
