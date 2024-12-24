@@ -224,7 +224,9 @@ html {
 
 .companySkills {
   display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
   gap: 10px;
+  justify-content: center; /* Center-align items on smaller screens */
   padding-top: 10px;
   padding-bottom: 50%;
 }
@@ -232,11 +234,43 @@ html {
 .companySkillName {
   font-size: 18px;
   text-align: center;
-  background-color: #ff6522;
+  background-color: #ffa07a; /* A softer, peachy tone */
   padding: 8px;
-  width: 80px;
+  width: auto; /* Adjust width automatically */
+  min-width: 60px; /* Ensures a minimum size */
+  max-width: 120px; /* Prevents items from being too wide */
   border-radius: 10px;
+  color: #000; /* Black text for good contrast */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds slight depth */
 }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .companySkills {
+    padding-bottom: 20px; /* Reduce padding for smaller screens */
+    gap: 8px; /* Smaller gap between items */
+  }
+
+  .companySkillName {
+    font-size: 16px; /* Slightly smaller font */
+    padding: 6px; /* Reduce padding for better fit */
+  }
+}
+
+/* Responsive Design for Extra Small Screens */
+@media (max-width: 480px) {
+  .companySkills {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align stacked items */
+  }
+
+  .companySkillName {
+    width: 100%; /* Make items full-width */
+    font-size: 14px; /* Further reduce font size */
+    padding: 5px; /* Adjust padding */
+  }
+}
+
 
 .companyPeriod {
   font-size: 24px;
