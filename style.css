@@ -225,23 +225,29 @@ html {
 .companySkills {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
   padding-top: 10px;
-  flex-wrap: wrap; /* Allows the items to move to the next line */
   padding-bottom: 50%;
+  justify-content: flex-start; /* Aligns items to the left, but can be centered if needed */
 }
 
 .companySkillName {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
-  background-color: #ffa07a; /* A softer, peachy tone */
-  padding: 8px;
-  min-width: 80px; /* Ensures a minimum width */
-  max-width: 120px; /* Prevents items from getting too wide */
+  background-color: #ffa07a; /* Softer background color */
+  padding: 10px;
+  min-width: 100px; /* Ensures uniform box width */
+  max-width: 120px;
+  height: 50px; /* Uniform height for all boxes */
   border-radius: 10px;
   color: #000; /* Black text for good contrast */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds slight depth */
-  word-wrap: break-word; /* Ensures long words wrap to the next line */
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  word-break: break-word; /* Ensures text breaks properly within the box */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
+
 
 
 
