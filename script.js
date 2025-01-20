@@ -166,18 +166,23 @@ tl5.fromTo(
 );
 
 // Slideshow functionality
+// Slideshow functionality
 const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
 function showSlides() {
   slides.forEach((slide, index) => {
-    slide.classList.remove("active"); // Remove active class from all slides
+    slide.classList.remove("active"); // Remove 'active' class from all slides
     if (index === currentSlide) {
-      slide.classList.add("active"); // Add active class to the current slide
+      slide.classList.add("active"); // Add 'active' class to the current slide
     }
   });
-  currentSlide = (currentSlide + 1) % slides.length; // Loop to the next slide
+  currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide
 }
+
+// Start the slideshow
+setInterval(showSlides, 3000); // Change slide every 3 seconds
+showSlides(); // Initialize the slideshow
 
 // Initialize the slideshow
 setInterval(showSlides, 3000); // Change slide every 3 seconds
