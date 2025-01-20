@@ -51,7 +51,7 @@ html {
 .pageLinks a {
   font-size: 18px;
   display: flex;
-  color: #8a8a93;
+  color: #a1a1aa;
   font-weight: 600;
   text-decoration: none;
 }
@@ -81,7 +81,7 @@ html {
 .nameSection {
   flex-grow: 2;
   background-color: #131315;
-  color: #8a8a93;
+  color: #a1a1aa;
   padding: 40px;
   border-radius: 20px;
   font-size: 44px;
@@ -95,12 +95,13 @@ html {
 }
 
 .aboutSection {
+  /* flex-grow: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Maintain vertical alignment */
-  gap: 40px; /* Space between slideshow and fieldSection */
-  background-color: #131315; /* Keep the background consistent */
+  flex-direction: column;
+  gap: 40px;
+  background-color: #131315;
   color: #fff;
   padding: 20px;
   border-radius: 20px;
@@ -109,7 +110,6 @@ html {
   letter-spacing: -3px;
 }
 
-
 .myPic {
   height: 280px;
   border-radius: 16px;
@@ -117,7 +117,7 @@ html {
 }
 
 .fieldName {
-  color: #8a8a93;
+  color: #a1a1aa;
   font-size: 36px;
 }
 
@@ -411,7 +411,7 @@ html {
 
 .footerRight {
   font-size: 18px;
-  color: #8a8a93;
+  color: #a1a1aa;
 }
 
 /* SMALL DESKTOP VIEW */
@@ -689,51 +689,6 @@ html {
     font-size: 22px;
     letter-spacing: -1px;
   }
-
-  /* SLIDESHOW SECTION */
-
-.slideshow {
-  position: relative;
-  width: 100%; /* Full width within the container */
-  max-width: 800px; /* Matches the width consistency of other sections */
-  height: auto; /* Height adjusts dynamically with the aspect ratio */
-  aspect-ratio: 16 / 9; /* Maintain standard aspect ratio */
-  overflow: hidden; /* Prevent any content overflow */
-  margin: auto; /* Center the slideshow */
-  border-radius: 16px; /* Rounded corners for a clean look */
-  background-color: #131315; /* Match background color of sections */
-}
-
-.slide {
-  position: absolute;
-  width: 100%; /* Images fill the slideshow container */
-  height: 100%; /* Maintain proportions */
-  object-fit: cover; /* Ensure images scale proportionally */
-  opacity: 0; /* Hide all images by default */
-  transition: opacity 1s ease-in-out; /* Smooth transition for active image */
-}
-
-.slide.active {
-  opacity: 1; /* Show only the active image */
-}
-
-/* Mobile Specific Styles */
-@media (max-width: 600px) {
-  .slideshow {
-    max-width: 100%; /* Allow the slideshow to take full width on small screens */
-    aspect-ratio: 16 / 9; /* Maintain the aspect ratio */
-    margin: auto; /* Center the slideshow horizontally */
-  }
-
-  .aboutSection {
-    gap: 20px; /* Adjust spacing between elements for mobile */
-    padding: 10px; /* Reduce padding for a cleaner mobile look */
-  }
-
-  .slide {
-    object-fit: cover; /* Ensure images still fill the container proportionally */
-  }
-}
 
   /* FOOTER SECTION */
 
