@@ -692,30 +692,29 @@ html {
 
   /* SLIDESHOW SECTION */
 
-/* Slideshow Container */
 .slideshow {
   position: relative;
-  width: 811px; /* Fixed width for the slideshow */
-  height: 548px; /* Fixed height for the slideshow */
-  overflow: hidden; /* Prevent images from overflowing */
-  margin: auto; /* Center the slideshow horizontally */
-  border-radius: 16px; /* Optional: Add rounded corners */
-  background-color: #000; /* Background to handle empty space */
+  width: 100%; /* Full width within the container */
+  max-width: 800px; /* Matches the width consistency of other sections */
+  height: auto; /* Height adjusts dynamically with the aspect ratio */
+  aspect-ratio: 16 / 9; /* Maintain standard aspect ratio */
+  overflow: hidden; /* Prevent any content overflow */
+  margin: auto; /* Center the slideshow */
+  border-radius: 16px; /* Rounded corners for a clean look */
+  background-color: #131315; /* Match background color of sections */
 }
 
-/* Slideshow Images */
 .slide {
-  position: absolute; /* Stack all slides on top of each other */
-  width: 100%; /* Fit the width of the slideshow container */
-  height: 100%; /* Fit the height of the slideshow container */
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
-  opacity: 0; /* Hide all slides by default */
-  transition: opacity 1s ease-in-out; /* Smooth fade effect */
+  position: absolute;
+  width: 100%; /* Images fill the slideshow container */
+  height: 100%; /* Maintain proportions */
+  object-fit: cover; /* Ensure images scale proportionally */
+  opacity: 0; /* Hide all images by default */
+  transition: opacity 1s ease-in-out; /* Smooth transition for active image */
 }
 
-/* Active Image */
 .slide.active {
-  opacity: 1; /* Only the active slide is visible */
+  opacity: 1; /* Show only the active image */
 }
 
 /* Mobile Specific Styles */
