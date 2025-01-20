@@ -692,25 +692,28 @@ html {
 
   /* SLIDESHOW SECTION */
 
+/* Slideshow Container */
 .slideshow {
   position: relative;
-  width: 100%; /* Set width to 100% to make it responsive */
-  max-width: 811px; /* Ensure it doesn't exceed 811px */
-  height: auto; /* Automatically adjust height based on aspect ratio */
-  aspect-ratio: 811 / 548; /* Maintain the desired aspect ratio */
-  overflow: hidden; /* Hide parts of the image exceeding the container */
-  margin: auto; /* Center the slideshow */
+  width: 811px; /* Fixed width for the slideshow */
+  height: 548px; /* Fixed height for the slideshow */
+  overflow: hidden; /* Prevent images from overflowing */
+  margin: auto; /* Center the slideshow horizontally */
+  border-radius: 16px; /* Optional: Add rounded corners */
+  background-color: #000; /* Background to handle empty space */
 }
 
+/* Slideshow Images */
 .slide {
   position: absolute; /* Stack all slides on top of each other */
-  width: 100%; /* Make slides adapt to container width */
-  height: 100%; /* Ensure slides fill the container */
-  object-fit: cover; /* Maintain image aspect ratio while covering the container */
-  opacity: 0; /* Hide all slides initially */
+  width: 100%; /* Fit the width of the slideshow container */
+  height: 100%; /* Fit the height of the slideshow container */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  opacity: 0; /* Hide all slides by default */
   transition: opacity 1s ease-in-out; /* Smooth fade effect */
 }
 
+/* Active Image */
 .slide.active {
   opacity: 1; /* Only the active slide is visible */
 }
