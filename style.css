@@ -95,13 +95,12 @@ html {
 }
 
 .aboutSection {
-  /* flex-grow: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 40px;
-  background-color: #131315;
+  flex-direction: column; /* Maintain vertical alignment */
+  gap: 40px; /* Space between slideshow and fieldSection */
+  background-color: #131315; /* Keep the background consistent */
   color: #fff;
   padding: 20px;
   border-radius: 20px;
@@ -109,6 +108,7 @@ html {
   font-weight: 600;
   letter-spacing: -3px;
 }
+
 
 .myPic {
   height: 280px;
@@ -720,9 +720,18 @@ html {
 /* Mobile Specific Styles */
 @media (max-width: 600px) {
   .slideshow {
-    max-width: 100%; /* Use full width of the screen */
-    height: auto; /* Adjust height automatically */
-    aspect-ratio: 811 / 548; /* Maintain aspect ratio */
+    max-width: 100%; /* Allow the slideshow to take full width on small screens */
+    aspect-ratio: 16 / 9; /* Maintain the aspect ratio */
+    margin: auto; /* Center the slideshow horizontally */
+  }
+
+  .aboutSection {
+    gap: 20px; /* Adjust spacing between elements for mobile */
+    padding: 10px; /* Reduce padding for a cleaner mobile look */
+  }
+
+  .slide {
+    object-fit: cover; /* Ensure images still fill the container proportionally */
   }
 }
 
