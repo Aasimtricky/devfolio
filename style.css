@@ -285,8 +285,11 @@ html {
   color: #fff;
   letter-spacing: -1.5px;
   padding-bottom: 16px;
-  text-decoration: none; /* Removes the underline */    /* Inherits the text color from the parent element */
 }
+
+.projectNameLink {
+    text-decoration: none; /* Removes the underline */
+    color: #a1a1aa; /* Sets the text color to match your site's aesthetic */
 
 .projectDesc {
   color: #d3d3d3;
