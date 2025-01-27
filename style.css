@@ -287,10 +287,6 @@ html {
   padding-bottom: 16px;
 }
 
-.projectNameLink {
-    text-decoration: none; /* Removes the underline */
-    color: #a1a1aa; /* Sets the text color to match your site's aesthetic */
-
 .projectDesc {
   color: #d3d3d3;
   font-size: 22px;
