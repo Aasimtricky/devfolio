@@ -119,6 +119,19 @@ html {
 .fieldName {
   color: #a1a1aa;
   font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;  /* Adds space for the number */
+  margin-top: 10px;  /* Slight gap between the job title and number */
+}
+
+.fieldName a {
+    text-decoration: none;
+    color: #ff6600; /* Keeping the link color consistent */
+    font-weight: 600;
+}
+
+.fieldName a:hover {
+    color: #ff4500; /* Hover effect */
 }
 
 /* SKILLS SECTION */
