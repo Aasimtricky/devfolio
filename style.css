@@ -133,34 +133,6 @@ html {
 .fieldName a:hover {
     color: #ff4500; /* Hover effect */
 }
-.conversation-link {
-  display: block;
-  margin-top: 15px; /* More space below job title */
-  font-size: 20px; /* Slightly larger for readability */
-  font-weight: 500;
-  line-height: 1.8; /* More vertical spacing for multi-line text */
-  letter-spacing: 0.8px; /* Adjusts letter spacing for better readability */
-  text-align: center; /* Centers the text */
-  max-width: 85%; /* Keeps it from stretching too wide */
-}
-
-.conversation-link a {
-  text-decoration: none;
-  color: #ff6600; /* Keeps the theme color */
-  font-weight: 600;
-  display: inline-block; /* Prevents collapse */
-  letter-spacing: 1px; /* Ensures even spacing */
-  word-spacing: 2px; /* Adjusts gaps between words */
-}
-
-.conversation-link a:hover {
-  color: #ff4500; /* Hover effect */
-}
-
-
-.conversation-link a:hover {
-  color: #ff4500; /* Hover effect */
-}
 
 /* SKILLS SECTION */
 
