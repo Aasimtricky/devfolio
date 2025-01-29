@@ -134,6 +134,23 @@ html {
     color: #ff4500; /* Hover effect */
 }
 
+.conversation-link {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.conversation-link a {
+  text-decoration: none;
+  color: #ff6600; /* Matches the phone number */
+  font-weight: 600;
+}
+
+.conversation-link a:hover {
+  color: #ff4500; /* Hover effect */
+}
+
 /* SKILLS SECTION */
 
 .skills {
