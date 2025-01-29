@@ -136,20 +136,22 @@ html {
 
 .conversation-link {
   display: block;
-  margin-top: 8px;
-  font-size: 18px;
+  margin-top: 12px; /* Increased margin for better spacing */
+  font-size: 20px; /* Slightly bigger for better readability */
   font-weight: 500;
+  line-height: 1.5; /* Adds more vertical space */
 }
 
 .conversation-link a {
   text-decoration: none;
-  color: #ff6600; /* Matches the phone number */
+  color: #ff6600; /* Matching the phone number color */
   font-weight: 600;
 }
 
 .conversation-link a:hover {
   color: #ff4500; /* Hover effect */
 }
+
 
 /* SKILLS SECTION */
 
