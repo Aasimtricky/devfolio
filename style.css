@@ -135,19 +135,22 @@ html {
 }
 .conversation-link {
   display: block;
-  margin-top: 12px; /* Adds space below the job title */
-  font-size: 20px; /* Bigger text */
+  margin-top: 15px; /* More space below job title */
+  font-size: 20px; /* Slightly larger for readability */
   font-weight: 500;
-  line-height: 1.6; /* More vertical spacing for multi-line text */
-  text-align: center; /* Centers the text for a balanced look */
-  max-width: 80%; /* Restricts width to avoid it stretching too wide */
+  line-height: 1.8; /* More vertical spacing for multi-line text */
+  letter-spacing: 0.8px; /* Adjusts letter spacing for better readability */
+  text-align: center; /* Centers the text */
+  max-width: 85%; /* Keeps it from stretching too wide */
 }
 
 .conversation-link a {
   text-decoration: none;
-  color: #ff6600; /* Matches your theme */
+  color: #ff6600; /* Keeps the theme color */
   font-weight: 600;
-  display: inline-block; /* Ensures it doesn't collapse */
+  display: inline-block; /* Prevents collapse */
+  letter-spacing: 1px; /* Ensures even spacing */
+  word-spacing: 2px; /* Adjusts gaps between words */
 }
 
 .conversation-link a:hover {
@@ -155,6 +158,9 @@ html {
 }
 
 
+.conversation-link a:hover {
+  color: #ff4500; /* Hover effect */
+}
 
 /* SKILLS SECTION */
 
