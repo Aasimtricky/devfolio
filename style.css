@@ -134,6 +134,12 @@ html {
     color: #ff4500; /* Hover effect */
 }
 
+.conversation-link a {
+    font-size: 14px; /* Smaller text */
+    font-weight: 400; /* Lighter weight to de-emphasize */
+    color: #a1a1aa; /* Muted color to blend in */
+}
+
 /* SKILLS SECTION */
 
 .skills {
