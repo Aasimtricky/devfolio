@@ -138,8 +138,9 @@ html {
     font-size: 14px; /* Small size */
     font-weight: 400; /* Lighter weight */
     color: #a1a1aa; /* Muted color */
-    letter-spacing: 0.5px; /* Adds space between letters */
-    line-height: 1.2; /* Ensures proper spacing between lines */
+    letter-spacing: 0.5px; /* Space between letters */
+    line-height: 1; /* Reduce line spacing */
+    white-space: nowrap; /* Prevents breaking into two lines */
 }
 
 /* SKILLS SECTION */
