@@ -573,7 +573,7 @@ html {
     font-weight: 400;      /* Lighter weight (unchanged) */
     color: #a1a1aa;        /* Muted color (unchanged) */
     letter-spacing: 0.5px; /* Space between letters (unchanged) */
-    line-height: 1;        /* Reduce line spacing (unchanged) */
+    line-height: 0.8;        /* Reduce line spacing (unchanged) */
 
     /* Add/modify the following to force wrapping */
     white-space: normal;   /* Allows text to wrap to the next line */
