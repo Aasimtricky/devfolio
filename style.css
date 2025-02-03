@@ -140,6 +140,7 @@ html {
     font-weight: 500; /* Optional: reduce thickness */
     color: #ff6600; /* Keeps existing color */
     display: inline-block; /* Ensures it doesn't affect other text */
+    letter-spacing: 1px; 
 }
 
 .conversation-link a {
