@@ -569,7 +569,7 @@ html {
   }
 
   .conversation-link a {
-    font-size: 14px;       /* Small size (unchanged) */
+    font-size: 10px;       /* Small size (unchanged) */
     font-weight: 400;      /* Lighter weight (unchanged) */
     color: #a1a1aa;        /* Muted color (unchanged) */
     letter-spacing: 0.5px; /* Space between letters (unchanged) */
